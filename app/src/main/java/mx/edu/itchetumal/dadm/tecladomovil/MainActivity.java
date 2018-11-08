@@ -43,17 +43,20 @@ public class MainActivity extends AppCompatActivity {
     btn2.setOnClickListener(new View.OnClickListener() {
         @Override
         public void onClick(View v) {
-            if (edt.getText().toString().compareTo("0")==0) {
+            /*if (edt.getText().toString().compareTo("0")==0) {
                 edt.setText("2");
             }
             else{edt.setText(edt.getText()+"2");
+            }*/
+            char abc[] = {'a','b','c'};
+            for (char i = 0; i < abc.length;i++){
+                    if (edt.getText().toString().compareTo("")==2){
+                        edt.setText(abc[i]);
+                    }
+
             }
 
-           if (edt.getText().toString().equals("2")){
-               Log.d("a", edt.getText().toString());
-           }else if (edt.getText().toString().equals("22")){
-               Log.d( "b",edt.getText().toString());
-           }
+           
 
         }
     }
